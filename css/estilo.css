@@ -40,7 +40,25 @@ header {
 	align-items: center;
 	height: 100%;
 	width: 100%;
+	animation: header 10s linear infinite alternate both;
+	animation: header 10s linear infinite alternate both;
 	
+}
+@keyframes header {
+  0% {
+    background: #808080;
+  }
+  100% {
+    background: #e6e6e6;
+  }
+}
+@keyframes header {
+  0% {
+    background: #e6e6e6;
+  }
+  100% {
+    background: #808080;
+  }
 }
 footer {
 	grid-area: footer;
