@@ -19,7 +19,7 @@ li {
 .principal{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 150px 400px 550px 150px;
+	grid-template-rows: 150px 400px 550px auto;
 	grid-auto-flow: row;
 	grid-auto-columns: 1fr;
     grid-template-areas: "header header"
@@ -130,7 +130,7 @@ h4 {
 .servicios{
   display: grid; 
   grid-template-columns: 2fr 1fr ; 
-  grid-template-rows: 150px 550px 100px 150px; 
+  grid-template-rows: 150px 550px 100px auto; 
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
   grid-template-areas: 
@@ -214,7 +214,7 @@ h4 {
   display: grid; 
   grid-auto-rows: 1fr; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 150px 300px 100px 400px 150px; 
+  grid-template-rows: 150px 300px 100px 400px auto; 
   gap: 5px 5px; 
   grid-template-areas: 
     "header header"
@@ -286,7 +286,7 @@ h4 {
 .turnos{  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 500px 150px;
+  grid-template-rows: 150px 500px auto;
   gap: 5px 5px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -338,7 +338,7 @@ h4 {
 .resultados {
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 150px 400px 150px; 
+  grid-template-rows: 150px 400px auto; 
   gap: 0px 0px; 
   grid-template-areas: 
     "header header"
@@ -373,7 +373,7 @@ h4 {
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 150px 500px 150px; 
+  grid-template-rows: 150px 500px auto; 
   gap: 0px 0px; 
   grid-template-areas: 
     "header header"
@@ -386,11 +386,13 @@ h4 {
 .form{
 	grid-area: form;
 	margin: 50px;
-	width: 100%;
+
 
 } 
 .img{
 	grid-area: img;
+	size: 100px;
+	
 }
 .titulo-contacto{
 	font-size: 40px;
@@ -399,17 +401,15 @@ h4 {
 	margin-bottom: 25px;
 
 }
-/*mediaQuery desktop*/
-@media(min-width: 1200px)
 
-}
+
 /* mediaQuery mobile*/
 @media(max-width: 768px){
 
 .principal {
   display: grid; 
   grid-template-columns: 1fr; 
-  grid-template-rows: 100px 300px 100px 200px 200px; 
+  grid-template-rows: 100px 300px 100px 200px auto; 
   gap: 0px 0px; 
   grid-template-areas: 
     "header"
@@ -428,7 +428,7 @@ justify-content: flex-start;
 .servicios{
   display: grid; 
   grid-template-columns:  1fr ; 
-  grid-template-rows: 100px 350px 230px 150px 100px; 
+  grid-template-rows: 100px 350px 230px 150px auto; 
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
   grid-template-areas: 
@@ -458,7 +458,7 @@ justify-content: flex-start;
   display: grid; 
   grid-auto-rows: 1fr; 
   grid-template-columns:  1fr; 
-  grid-template-rows: 100px 300px 100px 300px	350px 100px; 
+  grid-template-rows: 100px 300px 100px 300px	350px auto; 
   gap: 5px 5px; 
   grid-template-areas: 
     "header "
@@ -479,7 +479,7 @@ justify-content: flex-start;
 .turnos{  
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 400px 300px 100px;
+  grid-template-rows: 100px 400px 300px auto;
   gap: 5px 5px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -500,7 +500,7 @@ justify-content: flex-start;
 .contacto {
   display: grid;
   grid-template-columns: 1fr; 
-  grid-template-rows: 150px 500px 150px; 
+  grid-template-rows: 150px auto auto; 
    grid-template-areas: 
     "header"
     "form"
@@ -508,4 +508,5 @@ justify-content: flex-start;
     width: 100%;
     height: 100%;
 
+}
 }
