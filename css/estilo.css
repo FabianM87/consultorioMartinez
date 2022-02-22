@@ -1,0 +1,511 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Source Sans Pro';
+	text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #0077C8;
+
+}
+a:hover {
+	color: #b3b3b3;
+}
+li {
+	list-style: none;
+	margin: 10px;
+}
+.principal{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 150px 400px 550px 150px;
+	grid-auto-flow: row;
+	grid-auto-columns: 1fr;
+    grid-template-areas: "header header"
+	"main-principal main-principal"
+	"main-secundario video"
+	"footer footer";
+	width: 100%;
+	height: 100%;
+	grid-gap: 5px;
+}
+
+header {
+	grid-area: header;
+	display: flex;
+	font-size: small;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	
+}
+footer {
+	grid-area: footer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 5px;
+	font-size: small;
+	margin-top: 30px;
+	width: 100%;
+	height: 100%;
+
+}
+.logo{
+	width: 100%;
+}
+
+.main-principal{
+	grid-area: main-principal;
+	background-image: url(https://media.istockphoto.com/photos/in-the-hospital-closeup-shot-of-the-doctor-does-ultrasound-sonogram-picture-id996271208?b=1&k=20&m=996271208&s=170667a&w=0&h=B68a46sXGIXJ8HalP3s6MOjJbuLSrLbbTu0NPI3J9po=); 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;	
+}
+
+.video{
+	grid-area: video;
+	width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  
+}
+.nav__header{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	
+}	
+.titulo__principal{
+	color: #0e5487;
+	font-size: 50px;
+	text-shadow: 2px 1px #072e4a;
+	
+	
+}
+.parrafo-principal {
+	color: black;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+}
+
+.main-secundario{
+	grid-area: main-secundario;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+.nav__footer:hover {
+color: #b3b3b3;
+
+}
+
+h4 {
+	padding-bottom: 10px;
+	padding-left: 50px;
+}
+.subtitulo-index {
+	font-size: 40px;
+	color: #0e5487;
+	text-shadow: 2px 1px #072e4a;
+}
+.parrafo-secundario{
+	color: black;
+	display: flex;
+	text-align: center;
+}
+.servicios{
+  display: grid; 
+  grid-template-columns: 2fr 1fr ; 
+  grid-template-rows: 150px 550px 100px 150px; 
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+    "header header"
+    "main-servicios lista-servicios"
+    "subtitulo subtitulo"
+    "footer footer"; 
+  gap: 5px 5px; 
+  width: 100%;
+  height: 100%;
+}
+.subtitulo__parrafos{
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #0e5487;
+	text-shadow: 2px 1px #072e4a;
+}
+
+.main-servicios{
+  grid-area: main-servicios;
+  background-image: url(https://media.istockphoto.com/photos/ultrasound-examination-in-doctors-office-picture-id614051978?k=20&m=614051978&s=612x612&w=0&h=c4CIqN82F0itjV-bBI-zOb1KMOyQ6s597S9YOxbBgQ8=);
+  background-position: center	;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-areas: 
+    ". . texto-main"
+    ". . texto-main"
+    ". . texto-main"; 
+    
+
+  	
+    
+}
+.texto-main{
+	grid-area: texto-main;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.titulo-servicios{
+ 	font-size: 40px;
+ 	color: #0e5487;
+ 	text-shadow: 2px 1px #072e4a;
+
+
+}
+.parrafo-servicios{
+	font-size: 25px;
+	
+
+}
+.parrafo-principal{
+	font-size: 15px;
+}
+.lista-servicios{
+	grid-area: lista-servicios; 
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+   
+}
+
+.subtitulo{ 
+	grid-area: subtitulo;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px; 
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+
+}
+.nosotros{
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 150px 300px 100px 400px 150px; 
+  gap: 5px 5px; 
+  grid-template-areas: 
+    "header header"
+    "imagenes imagenes"
+    "staff staff"
+    "imagen__nosotros parrafo__nosotros"
+    "footer footer"; 
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagenes{ 
+	grid-area: imagenes;
+	background-image: url(https://media.istockphoto.com/photos/surgeon-and-anesthetist-doctor-er-surgical-team-with-medical-clinic-picture-id1072286960?k=20&m=1072286960&s=612x612&w=0&h=xy2hzymNd3UGCEPjKjY9pkBKA_2R_po1nhfC-e-KC60=);
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas: 
+  "presentacion_imagenes .";
+
+    
+   
+ }
+ .presentacion_imagenes{
+  	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%	;
+    font-size: 25px;
+ 
+  
+ }
+
+.parrafo__nosotros{ 
+	grid-area: parrafo__nosotros; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen__nosotros{ 
+	grid-area: imagen__nosotros;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+
+
+}
+.staff{ 
+ 	 grid-area: staff;
+   color: #0e5487;
+	 font-size: 30px;
+	 text-shadow: 2px 1px #072e4a;
+	 display: flex;
+	justify-content: center;
+	;
+}
+
+ .imgMedica{
+	width: 400px;
+}
+.turnos{  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 500px 150px;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "datos boton"
+    "footer footer";
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.datos { 
+	   grid-area: datos; 
+     font-size: 20px;
+     text-transform: capitalize;
+     border: 5px solid #0e5487;
+    
+}
+.titulo-datos{
+	display: flex;
+	justify-content: center;
+	font-size: 35px;
+	color: #0e5487;
+	text-shadow: 2px 1px #072e4a;
+	
+
+}
+.li-datos{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-size: 25px;
+
+}
+.boton { grid-area: boton;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ 
+
+
+
+
+ }
+.resultados {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 150px 400px 150px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header"
+    "cover-resultados cover-resultados"
+    "footer footer"; 
+}
+.cover-resultados{
+	grid-area: cover-resultados;
+	background-image: url(https://media.istockphoto.com/photos/accessible-information-is-crucial-for-current-medical-research-picture-id1287845968?b=1&k=20&m=1287845968&s=170667a&w=0&h=B3ucd3Y_G2SqLgz1wjKtEUY6brC0gRAx1bQUypz8nmc=) ;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: right;
+}
+
+.formulario{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+ 
+
+}
+.titulo-resultados{
+	font-size: 40px;
+	color: #0e5487;
+	text-shadow: 2px 1px #072e4a;
+	padding-top: 20px;
+	margin-left: 80px;
+
+
+}
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 150px 500px 150px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header"
+    "form img"
+    "footer footer"; 
+    width: 100%;
+    height: 100%;
+}
+
+.form{
+	grid-area: form;
+	margin: 50px;
+	width: 100%;
+
+} 
+.img{
+	grid-area: img;
+}
+.titulo-contacto{
+	font-size: 40px;
+	color: #0e5487;
+	text-shadow: 2px 1px #072e4a;
+	margin-bottom: 25px;
+
+}
+/*mediaQuery desktop*/
+@media(min-width: 1200px)
+
+}
+/* mediaQuery mobile*/
+@media(max-width: 768px){
+
+.principal {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 100px 300px 100px 200px 200px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header"
+    "main-principal"
+    "main-secundario"
+    "video"
+    "footer"; 
+	width: 100%;
+	height: 100%;
+
+}
+
+.main-secundario{
+justify-content: flex-start;
+}	
+.servicios{
+  display: grid; 
+  grid-template-columns:  1fr ; 
+  grid-template-rows: 100px 350px 230px 150px 100px; 
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "main-servicios"
+    "lista-servicios"
+    "subtitulo"
+    "footer"; 
+  gap: 5px 5px; 
+  width: 100%;
+  height: 100%;
+  
+}
+.main-servicios{
+	width: 100%;
+	height: 100%;
+
+}
+.titulo-servicios{
+	font-size: 30px;
+}
+.parrafo-servicios{
+	font-size: 20px;
+	color: black;
+}
+.nosotros{
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns:  1fr; 
+  grid-template-rows: 100px 300px 100px 300px	350px 100px; 
+  gap: 5px 5px; 
+  grid-template-areas: 
+    "header "
+    "imagenes "
+    "staff "
+    "imagen__nosotros "
+    "parrafo__nosotros"
+    "footer "; 
+    width: 100%;
+    height: 100%;
+}
+.presentacion_imagenes{
+	font-size: 15px;
+}
+.staff{
+	font-size: 20px;
+}
+.turnos{  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 400px 300px 100px;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "datos"
+    "boton"
+    "footer";
+    width: 100%;
+    height: 100%;
+}
+.datos{
+	border: none;
+
+}
+.img{
+	display: none;
+}
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 150px 500px 150px; 
+   grid-template-areas: 
+    "header"
+    "form"
+    "footer"; 
+    width: 100%;
+    height: 100%;
+
+}
